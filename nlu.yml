@@ -1,0 +1,217 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: tell_name
+  examples: |
+    - i want to buy a car
+    - i want to sell a car
+    - buy
+    - sell
+    - i want to sell
+    - i want to buy
+
+- intent: my_name
+  examples: |
+    - my name is [ashish]{"entity":"name","value":"ashish"}
+    - my name is [rahul]{"entity":"name","value":"rahul"}
+    - my name is [apneet]{"entity":"name","value":"apneet"}
+    - [shashank]{"entity":"name","value":"shashank"}
+    - [kiran]{"entity":"name","value":"kiran"} this side
+    - people call me [ashish]{"entity":"name","value":"ashish"}    
+    - [tharun]{"entity":"name","value":"tharun"}
+    - [samules]{"entity":"name","value":"samules"}
+    - [vineeth]{"entity":"name","value":"vineeth"}
+
+- intent: mobile_number
+  examples: |
+    - +33 (0)3 - 22666600{"entity":"number"}
+    - +33 (0)7 - 78568604{"entity":"number"}
+    - +33 (0)4 - 78707608{"entity":"number"}
+    - +33 (0)1 - 74596684{"entity":"number"}
+    - +33 (0)3 - 89322911{"entity":"number"}
+    - +33 (0)6 - 34537585{"entity":"number"}
+    - +33 (0)3 - 82243922{"entity":"number"}
+    - +33 (0)1 - 41640442{"entity":"number"}
+    - +33 (0)7 - 71189444{"entity":"number"}
+    - my number is [8209829808]{"entity":"number"}
+    - [8209829808]{"entity":"number"}
+    - [8209829808]{"entity":"number"} is my number
+    - my nobile number is [8209829808]{"entity":"number"}
+    - my number is [9843876542]{"entity":"number"}
+    - [9676534617]{"entity":"number"}
+    - [7894358675]{"entity":"number"} is my number
+    - my nobile number is [989943237]{"entity":"number"}
+
+- intent: location
+  examples: |
+    - [Alsace]{"entity":"region","value":"Alsace"}
+    - [Aquitaine]{"entity":"region","value":"Aquitaine"}
+    - [Auvergne]{"entity":"region","value":"Auvergne"}
+    - [Ardenne]{"entity":"region","value":"Ardenne"}
+    - [Burgundy]{"entity":"region","value":"Burgundy"}
+    - [Brittany]{"entity":"region","value":"Brittany"}
+    - [Center]{"entity":"region","value":"Center"}
+    - [Corsica]{"entity":"region","value":"Corsica"}
+    - [Charentes]{"entity":"region","value":"Charentes"}
+    - [Franche]{"entity":"region","value":"Franche"}
+    - [Ile-de-France]{"entity":"region","value":"Ile-de-France"}
+    - [Lower-Normandy]{"entity":"region","value":"Lower-Normandy"}
+    - [Loire-Country]{"entity":"region","value":"Loire-Country"}
+    - [Languedoc]{"entity":"region","value":"Languedoc"}
+    - [Lorraine]{"entity":"region","value":"Lorraine"}
+    - [Limousin]{"entity":"region","value":"Limousin"}
+    - [Midi-Pyrenees]{"entity":"region","value":"Midi-Pyrenees"}
+    - [Nord-Pas-de-Calais]{"entity":"region","value":"Nord-Pas-de-Calais"}
+    - [Picardie]{"entity":"region","value":"Picardie"}
+    - [Provence-Alpes-Côte-d'Azur]{"entity":"region","value":"Provence-Alpes-Côte-d'Azur"}
+    - [Rhône-Alpes]{"entity":"region","value":"Rhône-Alpes"}
+    - [Upper-Normandy]{"entity":"region","value":"Upper-Normandy"}
+
+- intent: brands 
+  examples: |
+    - [Audi]{"entity":"car_brand","value":"Audi"}
+    - [Bmw]{"entity":"car_brand","value":"Bmw"}
+    - [Citroen]{"entity":"car_brand","value":"Citroen"}
+    - [Dacia]{"entity":"car_brand","value":"Dacia"}
+    - [Fiat]{"entity":"car_brand","value":"Fiat"}
+    - [Ford]{"entity":"car_brand","value":"Ford"}
+    - [Mercedes]{"entity":"car_brand","value":"Mercedes"}
+    - [Nissan]{"entity":"car_brand","value":"Nissan"}
+    - [Opel]{"entity":"car_brand","value":"Opel"}
+    - [Peugeot]{"entity":"car_brand","value":"Peugeot"}
+    - [Renault]{"entity":"car_brand","value":"Renault"}
+    - [Toyota]{"entity":"car_brand","value":"Toyota"}
+    - [Volkswagen]{"entity":"car_brand","value":"Volkswagen"}
+
+
+- intent: gearbox
+  examples: |
+    - [automatic]{"entity":"gear","value":"automatic"}
+    - [mechanical]{"entity":"gear","value":"mechanical"}
+    - [manual]{"entity":"gear","value":"manual"}
+    - [auto]{"entity":"gear","value":"auto"}
+
+- intent: interior-color
+  examples: |
+    - [beige]{"entity":"colorin","value":"beige"}
+    - [white]{"entity":"colourin","value":"white"}
+    - [blue]{"entity":"colourin","value":"blue"}
+    - [fauve]{"entity":"colourin","value":"fauve"}
+    - [grey]{"entity":"colourin","value":"grey"}
+    - [ivory]{"entity":"colourin","value":"ivory"}
+    - [brown]{"entity":"colourin","value":"brown"}
+    - [black]{"entity":"colourin","value":"black"}
+    - [red]{"entity":"colourin","value":"red"} 
+
+- intent: energy
+  examples: |
+    - [diesel]{"entity":"fuel","value":"diesel"}
+    - [petrol]{"entity":"fuel","value":"petrol"}
+    - [gasoline]{"entity":"fuel","value":"gasoline"}
+    - [electric]{"entity":"fuel","value":"electric"}
+    - [hybrids]{"entity":"fuel","value":"hybrids"}
+    - [gasoline]{"entity":"fuel","value":"gasoline"}
+    - [bioethanol gasoline bifuel]{"entity":"fuel","value":"bioethanol gasoline bifuel"}
+
+- intent: cost
+  examples: |
+    - [$500]{"entity":"price","value":"$500"}
+    - [$1000]{"entity":"price","value":"$1000"}
+    - [$5000]{"entity":"price","value":"$5000"}
+    - [$68954]{"entity":"price","value":"$68954"}
+    - [$25580]{"entity":"price","value":"$25580"}
+
+- intent: consumption
+  examples: |
+    - [5km/1l]{"entity":"mileage","value":"5km/1l"}
+    - [10km/1l]{"entity":"mileage","value":"10km/1l"}
+    - [15/1l]{"entity":"mileage","value":"15km/1l"}
+    - [18/1l]{"entity":"mileage","value":"18km/1l"}
+    - [3km/1l]{"entity":"mileage","value":"3km/1l"}
+    - [20km/1l]{"entity":"mileage","value":"20km/1l"}
+    - [13/1l]{"entity":"mileage","value":"13km/1l"}
+
+
